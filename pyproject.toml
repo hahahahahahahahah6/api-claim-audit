@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "api-claim-audit"
+version = "0.1.0"
+description = "Offline static audit of documented Python API claims"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "api-claim-audit contributors"}]
+dependencies = []
+
+[project.scripts]
+api-claim-audit = "api_claim_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
