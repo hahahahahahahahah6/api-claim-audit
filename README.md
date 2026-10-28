@@ -16,7 +16,7 @@ api-claim-audit /path/to/project --json
 api-claim-audit . --fail-on HIGH
 api-claim-audit . --ignore documented-import-missing --verbose
 api-claim-audit --version
-python -m api_claim_audit .
+python3 -m api_claim_audit .
 ```
 
 The path defaults to `.`. `--ignore RULE,...` drops named rules entirely; for
